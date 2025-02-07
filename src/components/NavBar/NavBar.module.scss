@@ -1,0 +1,34 @@
+@import '../../styles/settings.scss';
+
+.navbar {
+    background:darken($color-dark, 3%);
+}
+
+.container {
+    display:flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size:24px;
+    color:white;
+    margin-top:5px;
+    margin-left:20px;
+    padding:7px;
+}
+
+.menu {
+    list-style: none;
+    display:flex;
+    gap:20px;
+    margin-right:20px;
+    padding:7px;
+
+    li a {
+        text-decoration: none;
+        color:white;
+        font-weight: bold;
+
+
+    }
+}
