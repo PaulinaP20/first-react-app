@@ -10,7 +10,7 @@ const NavBar =() => {
                 </a>
                 <ul className={styles.menu}>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/favourite">Favourite</a></li>
+                    <li><a href="/favorite">Favorite</a></li>
                     <li><a href="/about">About</a></li>
                 </ul>
             </div>
