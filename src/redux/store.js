@@ -18,7 +18,7 @@ import { strContains } from '../components/utils/strContains';
 
   export const getColumnsByList = ({columns}, listId) => columns.filter(column =>column.listId===listId);
 
-  export const getAllList = (state) => state.lists
+  export const getAllList = (state) => state.lists;
 
 const reducer = (state, action) => {
   switch(action.type){

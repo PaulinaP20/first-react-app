@@ -4,11 +4,14 @@ import Button from '../Button/Button';
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { updateSearchString } from '../../redux/store';
+import { useSelector } from 'react-redux';
 
 const SearchForm = () => {
 
     const dispatch=useDispatch();
-    const [searchText, setSearchText]=useState('');
+    const searchString=useSelector(state=>state.searchString);
+
+    const [searchText, setSearchText]=useState(searchString);
 
     const handleSubmit=e=>{
         e.preventDefault();
