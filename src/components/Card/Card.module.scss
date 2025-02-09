@@ -15,10 +15,14 @@
         font-size: 24px;
         cursor: pointer;
         transition: transform 0.3s ease, border-color 0.3s ease;
+        margin-right:10px;
+
+        &:hover {
+          color:black;
+        }
 
         &.fa-star-o {
           border-radius: 50%;
-          padding: 5px;
           text-shadow: 0 0 2px grey;
         }
 
