@@ -3,7 +3,7 @@ import TextInput from '../TextInput/TextInput'
 import {useState} from 'react';
 import Button from '../Button/Button';
 import { useDispatch } from 'react-redux';
-import { addCard } from '../../redux/store';
+import { addCard } from '../../redux/cardsRedux'
 
 
 const CardForm =props => {

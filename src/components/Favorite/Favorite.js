@@ -1,5 +1,5 @@
 import PageTitle from '../PageTitle/PageTitle';
-import { getFavoriteCards } from '../../redux/store';
+import { getFavoriteCards } from '../../redux/cardsRedux';
 import { useSelector } from 'react-redux';
 import Card from '../Card/Card'
 import styles from './Favorite.module.scss';
@@ -7,7 +7,7 @@ import styles from './Favorite.module.scss';
 const Favorite = () => {
 
     const favoriteCards=useSelector(state=>getFavoriteCards(state));
-    console.log(favoriteCards);
+    //console.log(favoriteCards);
 
     return (
         <div>
