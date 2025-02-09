@@ -15,10 +15,7 @@ const CardForm =props => {
         e.preventDefault();
         dispatch(addCard({title,columnId:props.columnId}));
         setTitle('');
-
-
     }
-
     return (
         <form onSubmit={handleSubmit} className={styles.CardForm}>
             <TextInput type="text" value={title} onChange={e=>setTitle(e.target.value)}/>
